@@ -14,16 +14,6 @@ let nextConfig = {
     'd3-array',
     'internmap'
   ],
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: process.env.NEXT_PUBLIC_BASE_PATH,
-        basePath: false,
-        permanent: true
-      }
-    ]
-  }
 }
 
 if (shouldAnalyse) {
